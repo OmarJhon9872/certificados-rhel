@@ -1,0 +1,17 @@
+# Portafolio SysAdmin Linux Cloud JR
+
+> CV digital y portafolio profesional de Nombre Persona Demo Analista, certificado en SysAdmin Linux Cloud JR por Selling One. Especialista junior en Linux, administración de servidores y servicios cloud.
+
+Este sitio funciona como currículum interactivo para procesos de reclutamiento. Incluye perfil profesional, temas dominados durante la certificación, evidencia de prácticas, información del instructor (Ing. TIC's Jonathan Omar) y de la empresa capacitadora (Selling One).
+
+## Páginas
+
+- [Inicio](/): Hero, estadísticas, perfil, temas cursados, stack técnico, evidencia, instructor, empresa y contacto.
+
+## Secciones del portafolio
+
+- Perfil profesional y objetivo laboral
+- Syllabus técnico: Linux, Cloud, Docker, Bash, AWS, monitoreo, seguridad
+- Evidencia de laboratorios y prácticas realizadas durante el curso
+- Instructor: Ing. TIC's Jonathan Omar
+- Empresa capacitadora: Selling One
