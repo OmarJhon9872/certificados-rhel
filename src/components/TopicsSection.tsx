@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
-import { Terminal, Server, Cloud, Shield, Network, HardDrive, GitBranch, Container, Database, Activity, Lock, Workflow } from "lucide-react";
+import { Terminal, Server, HardDrive, Flame, Container, Stethoscope, Globe, Network, Cloud, Lock, ShieldCheck, FileSearch } from "lucide-react";
 
 const topics = [
-  { icon: Terminal, title: "Fundamentos de Linux", desc: "Shell, jerarquía del sistema de archivos, permisos y administración de usuarios." },
-  { icon: Server, title: "Administración de Servidores", desc: "Configuración de servicios, systemd, cron y gestión de procesos." },
-  { icon: Network, title: "Redes y Conectividad", desc: "TCP/IP, DNS, firewall (iptables/ufw), SSH y túneles seguros." },
-  { icon: HardDrive, title: "Almacenamiento y Particiones", desc: "LVM, RAID, sistemas de archivos y respaldo de datos críticos." },
-  { icon: Shield, title: "Seguridad en Linux", desc: "Hardening, SELinux/AppArmor, gestión de vulnerabilidades y parches." },
-  { icon: Cloud, title: "Cloud Computing", desc: "Fundamentos de AWS / Azure / GCP, IaaS, PaaS y modelos de despliegue." },
-  { icon: Container, title: "Docker y Contenedores", desc: "Construcción de imágenes, redes y orquestación con Docker Compose." },
-  { icon: Workflow, title: "Automatización con Bash", desc: "Scripting, cron jobs y automatización de tareas administrativas." },
-  { icon: GitBranch, title: "Git y Control de Versiones", desc: "Workflows colaborativos, branching y gestión de configuración." },
-  { icon: Activity, title: "Monitoreo y Logs", desc: "Prometheus, Grafana, journalctl y análisis de logs en producción." },
-  { icon: Database, title: "Bases de Datos en Linux", desc: "Instalación y administración de PostgreSQL y MySQL en servidores." },
-  { icon: Lock, title: "Backup y Recuperación", desc: "Estrategias 3-2-1, snapshots y planes de continuidad operativa." },
+  { icon: Terminal, title: "Bases para sistemas RHEL", desc: "Instalación de Red Hat Enterprise Linux, jerarquía de archivos, permisos, usuarios y dnf." },
+  { icon: Server, title: "Administración con systemd", desc: "Unidades, targets, servicios, timers y gestión del ciclo de vida del sistema." },
+  { icon: HardDrive, title: "LVM y almacenamiento", desc: "Volume groups, logical volumes, extensión en caliente, snapshots y XFS." },
+  { icon: Flame, title: "Firewall con firewalld", desc: "Zonas, servicios, rich rules, port forwarding y políticas de perímetro en RHEL." },
+  { icon: Container, title: "Contenedores con Podman", desc: "Contenedores rootless, imágenes, volúmenes y servicios containerizados con systemd." },
+  { icon: Stethoscope, title: "Diagnóstico de fallas", desc: "journalctl, systemctl, dmesg, análisis de arranque y resolución de incidentes." },
+  { icon: Network, title: "DNS y resolución de nombres", desc: "Registros A, CNAME, MX y TXT, resolvers, dig/nslookup y troubleshooting DNS." },
+  { icon: Globe, title: "Servidores web", desc: "Apache httpd y Nginx: virtual hosts, TLS, permisos SELinux y despliegue de sitios." },
+  { icon: FileSearch, title: "Reverse proxy", desc: "Proxy inverso, balanceo básico, cabeceras, caché y publicación de aplicaciones internas." },
+  { icon: Cloud, title: "Cloudflare", desc: "DNS gestionado, proxy naranja, certificados, reglas de caché y protección DDoS." },
+  { icon: ShieldCheck, title: "Seguridad y SELinux", desc: "Contextos, booleanos, gestión de vulnerabilidades y actualizaciones de seguridad." },
+  { icon: Lock, title: "Hardening de SSH", desc: "Llaves, desactivación de root login, puertos, fail2ban y buenas prácticas de acceso remoto." },
 ];
 
 const TopicsSection = () => {
@@ -32,7 +32,7 @@ const TopicsSection = () => {
             Temas Cursados
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Contenidos técnicos dominados durante la certificación <span className="font-semibold text-primary">SysAdmin Linux Cloud JR</span> impartida por Selling One.
+            Contenidos técnicos dominados durante la certificación <span className="font-semibold text-primary">Red Hat Enterprise Linux JR</span> impartida por Selling One.
           </p>
         </motion.div>
 

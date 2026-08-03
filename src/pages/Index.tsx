@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
-import ProfileSection from "@/components/ProfileSection";
+import CourseSection from "@/components/CourseSection";
 import TopicsSection from "@/components/TopicsSection";
 import ToolsSlider from "@/components/ToolsSlider";
 import EvidenceSection from "@/components/EvidenceSection";
@@ -14,8 +14,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>CV · SysAdmin Linux Cloud JR | Selling One</title>
-        <meta name="description" content="Portafolio profesional certificado en SysAdmin Linux Cloud JR por Selling One. Linux, Cloud, Docker e infraestructura TI." />
+        <title>CV · Red Hat Enterprise Linux JR | Selling One</title>
+        <meta name="description" content="Portafolio profesional certificado en Red Hat Enterprise Linux JR: RHEL, LVM, firewalld, Podman, DNS, reverse proxy y hardening SSH." />
         <link rel="canonical" href="/" />
         <meta property="og:url" content="/" />
         <meta property="og:type" content="profile" />
@@ -24,7 +24,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <StatsSection />
-        <ProfileSection />
+        <CourseSection />
         <TopicsSection />
         <ToolsSlider />
         <EvidenceSection />

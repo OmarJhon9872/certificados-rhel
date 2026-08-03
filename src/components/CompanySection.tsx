@@ -3,10 +3,10 @@ import { Award, BookOpen, Users, Zap, Monitor, HeartHandshake } from "lucide-rea
 import companyLogo from "@/assets/sellingone-logo.png";
 
 const benefits = [
-  { icon: BookOpen, title: "Programa actualizado", desc: "Currícula alineada con las demandas reales del mercado SysAdmin y Cloud." },
-  { icon: Users, title: "Instructores certificados", desc: "Profesionales activos en infraestructura y operaciones en la nube." },
+  { icon: BookOpen, title: "Programa actualizado", desc: "Currícula alineada con el ecosistema Red Hat y las demandas reales del mercado." },
+  { icon: Users, title: "Instructores certificados", desc: "Profesionales activos en administración de RHEL e infraestructura crítica." },
   { icon: Zap, title: "Aprendizaje práctico", desc: "Más del 80% del programa basado en laboratorios y casos reales." },
-  { icon: Monitor, title: "Entornos profesionales", desc: "Acceso a infraestructura cloud y herramientas enterprise." },
+  { icon: Monitor, title: "Entornos profesionales", desc: "Acceso a servidores RHEL, Podman y herramientas enterprise." },
   { icon: Award, title: "Certificación avalada", desc: "Reconocida por empresas del sector TI y telecomunicaciones." },
   { icon: HeartHandshake, title: "Bolsa de trabajo", desc: "Vinculación directa con empresas aliadas y red de egresados." },
 ];
@@ -45,12 +45,12 @@ const CompanySection = () => {
             </div>
             <p className="text-muted-foreground mt-6 text-lg leading-relaxed w-[90%] md:w-[90%] mx-auto md:mx-0 text-center md:text-left">
               <span className="font-semibold text-foreground">Selling One</span> es una empresa líder en
-              capacitación tecnológica especializada en infraestructura, administración de sistemas Linux
-              y servicios en la nube. Con un enfoque 100% práctico y alianzas con empresas del sector TI,
+              capacitación tecnológica especializada en administración de sistemas Red Hat Enterprise Linux,
+              redes y seguridad de servidores. Con un enfoque 100% práctico y alianzas con empresas del sector TI,
               forma a los nuevos profesionales que demanda la industria.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-8">
-              {["Capacitación TI", "Linux & Cloud", "Aliados Enterprise", "Bolsa de Trabajo"].map((tag) => (
+              {["Capacitación TI", "RHEL & Seguridad", "Aliados Enterprise", "Bolsa de Trabajo"].map((tag) => (
                 <span key={tag} className="badge-outline">{tag}</span>
               ))}
             </div>

@@ -41,7 +41,7 @@ const InstructorSection = () => {
               <div className="mt-5">
                 <div className="text-xs font-mono uppercase tracking-widest text-white/60">Instructor titular</div>
                 <h3 className="text-2xl font-bold mt-1">Ing. TIC's Jonathan Omar</h3>
-                <div className="text-white/70 text-sm mt-1">Especialista en Linux & Cloud</div>
+                <div className="text-white/70 text-sm mt-1">Especialista en RHEL & Seguridad</div>
               </div>
               <div className="flex gap-2 mt-4">
                 <span className="inline-flex items-center gap-1 text-xs px-3 py-1 rounded-full bg-white/10 border border-white/20">
@@ -56,8 +56,9 @@ const InstructorSection = () => {
             <div className="md:col-span-2">
               <Quote className="w-10 h-10 text-white/30 mb-4" />
               <p className="text-lg md:text-xl leading-relaxed text-white/90 italic">
-                "El curso SysAdmin Linux Cloud JR está diseñado para transformar el talento junior en
-                profesionales capaces de operar y mantener infraestructura crítica desde el día uno.
+                "El curso Red Hat Enterprise Linux JR está diseñado para que un perfil junior pueda
+                sostener servidores RHEL en producción desde el primer día: LVM, firewalld, Podman,
+                DNS, reverse proxy y hardening de SSH aplicados sobre fallas reales.
                 <span className="not-italic font-semibold text-white"> Nombre Persona Demo</span> ha
                 demostrado dedicación, criterio técnico y verdadera pasión por la administración de
                 sistemas a lo largo de toda la certificación."

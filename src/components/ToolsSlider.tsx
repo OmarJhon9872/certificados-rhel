@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const tools = [
-  "Linux", "Bash", "Ubuntu Server", "CentOS", "AWS", "Azure",
-  "Docker", "Kubernetes", "Nginx", "Apache", "SSH", "Ansible",
-  "Terraform", "Git", "Prometheus", "Grafana", "PostgreSQL", "MySQL",
+  "RHEL 9", "systemd", "dnf", "SELinux", "LVM", "XFS",
+  "firewalld", "Podman", "Buildah", "SSH", "OpenSSL", "Bash",
+  "Apache httpd", "Nginx", "BIND / DNS", "Cloudflare", "journalctl", "fail2ban",
 ];
 
 const ToolsSlider = () => {
@@ -16,7 +16,7 @@ const ToolsSlider = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Stack Técnico · Herramientas Dominadas
+          Stack Técnico · Herramientas del Ecosistema Red Hat
         </motion.p>
       </div>
       <div className="relative">

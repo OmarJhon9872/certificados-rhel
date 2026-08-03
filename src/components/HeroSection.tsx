@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Download } from "lucide-react";
-import heroBanner from "@/assets/hero-banner.jpg";
+import heroBanner from "@/assets/hero-rhel.jpg";
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBanner})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-foreground/70 to-foreground/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-foreground/70 to-foreground/90" />
 
       {/* Grid overlay */}
       <div
@@ -29,7 +29,7 @@ const HeroSection = () => {
           className="flex flex-wrap items-center justify-center gap-2"
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-mono uppercase tracking-widest">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
             Disponible para entrevistas
           </span>
         </motion.div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.h1
-          className="text-display text-primary-foreground mt-3"
+          className="text-display text-white mt-3"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -54,25 +54,25 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-primary-foreground/90 mt-6 max-w-2xl mx-auto font-light"
+          className="text-xl md:text-2xl text-white/90 mt-6 max-w-2xl mx-auto font-light"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <span className="font-semibold">SysAdmin Linux Cloud JR</span> · Certificado por{" "}
+          <span className="font-semibold">Red Hat Enterprise Linux JR</span> · Certificado por{" "}
           <span className="text-white font-semibold">Selling One</span>
         </motion.p>
 
         <motion.div
-          className="flex flex-wrap items-center justify-center gap-6 mt-8 font-mono text-sm text-primary-foreground/70"
+          className="flex flex-wrap items-center justify-center gap-6 mt-8 font-mono text-sm text-white/70"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.55 }}
         >
           <span className="inline-flex items-center gap-2"><MapPin className="w-4 h-4" /> México</span>
-          <span className="w-1 h-1 rounded-full bg-primary-foreground/40" />
-          <span>320+ Horas</span>
-          <span className="w-1 h-1 rounded-full bg-primary-foreground/40" />
+          <span className="w-1 h-1 rounded-full bg-white/40" />
+          <span>RHEL 9 · Podman · LVM</span>
+          <span className="w-1 h-1 rounded-full bg-white/40" />
           <span>100% Completado</span>
         </motion.div>
 
@@ -84,7 +84,7 @@ const HeroSection = () => {
         >
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-primary font-semibold hover:bg-white/90 transition-all hover-scale shadow-lg"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all hover-scale shadow-lg"
           >
             <Mail className="w-4 h-4" /> Contactar
           </a>
