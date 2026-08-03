@@ -3,7 +3,7 @@ import { Menu, Terminal } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 const navLinks = [
-  { label: "Perfil", href: "#perfil" },
+  { label: "Curso", href: "#curso" },
   { label: "Temas", href: "#temas" },
   { label: "Evidencia", href: "#evidencia" },
   { label: "Instructor", href: "#instructor" },
@@ -42,7 +42,7 @@ const Header = () => {
             <span className={`text-[10px] font-mono uppercase tracking-wider transition-colors ${
               scrolled ? "text-muted-foreground" : "text-white/60"
             }`}>
-              SysAdmin · Linux · Cloud
+              RHEL · Podman · Seguridad
             </span>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Header = () => {
                 </div>
                 <div>
                   <div className="font-bold text-foreground">Nombre Persona Demo</div>
-                  <div className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground">SysAdmin Linux Cloud JR</div>
+                  <div className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground">Red Hat Enterprise Linux JR</div>
                 </div>
               </div>
               <nav className="flex flex-col gap-1">

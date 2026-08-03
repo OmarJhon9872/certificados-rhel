@@ -7,6 +7,10 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import labTerminal from "@/assets/lab-terminal.jpg";
+import labContainers from "@/assets/lab-containers.jpg";
+import labSecurity from "@/assets/lab-security.jpg";
+import labNetwork from "@/assets/lab-network.jpg";
 
 type Evidence = {
   title: string;
@@ -15,18 +19,18 @@ type Evidence = {
 };
 
 const evidences: Evidence[] = [
-  { title: "Instalación de Linux", description: "Despliegue de Ubuntu Server desde cero, particionamiento manual y configuración inicial de red.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&q=80" },
-  { title: "Shell & Bash Scripting", description: "Automatización de tareas administrativas con scripts robustos en Bash, manejo de variables y bucles.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&q=80" },
-  { title: "Gestión de Usuarios", description: "Administración de usuarios, grupos, permisos POSIX y sudoers para entornos multiusuario.", image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80" },
-  { title: "SSH Seguro", description: "Configuración de acceso remoto con autenticación por llave, hardening de sshd_config y túneles.", image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800&q=80" },
-  { title: "Firewall & iptables", description: "Reglas de filtrado, NAT y políticas de seguridad perimetral con iptables/ufw.", image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80" },
-  { title: "Servidor Web Nginx", description: "Despliegue de sitios estáticos y reverse proxy con Nginx, certificados SSL con Let's Encrypt.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" },
-  { title: "Docker & Contenedores", description: "Construcción de imágenes personalizadas, redes y volúmenes con Docker y Docker Compose.", image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800&q=80" },
-  { title: "AWS EC2", description: "Provisión de instancias EC2, grupos de seguridad y almacenamiento EBS en la nube de AWS.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" },
-  { title: "Monitoreo con Grafana", description: "Dashboards de monitoreo de recursos con Prometheus y Grafana sobre servidores Linux.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" },
-  { title: "LVM & Almacenamiento", description: "Configuración de volúmenes lógicos, extensión de particiones y snapshots con LVM.", image: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80" },
-  { title: "Backups Automatizados", description: "Estrategia 3-2-1 con rsync, cron y almacenamiento remoto cifrado.", image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" },
-  { title: "Proyecto Final Cloud", description: "Despliegue end-to-end de aplicación con CI/CD, contenedores y monitoreo en la nube.", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" },
+  { title: "Instalación de RHEL 9", description: "Despliegue de Red Hat Enterprise Linux 9 desde cero: particionamiento, registro de suscripción y configuración inicial de red.", image: labTerminal },
+  { title: "Gestión con dnf y systemd", description: "Administración de paquetes, repositorios y servicios: unidades personalizadas, timers y control del arranque.", image: labTerminal },
+  { title: "LVM en producción", description: "Creación de volume groups, extensión en caliente de volúmenes lógicos y snapshots antes de actualizaciones críticas.", image: labContainers },
+  { title: "Firewalld y zonas", description: "Definición de zonas, servicios permitidos, rich rules y port forwarding para exponer solo lo necesario.", image: labSecurity },
+  { title: "Podman rootless", description: "Construcción y ejecución de contenedores sin privilegios, volúmenes persistentes y servicios generados con systemd.", image: labContainers },
+  { title: "Diagnóstico de incidentes", description: "Análisis de fallas con journalctl, systemctl status, dmesg y revisión del arranque para restaurar servicios caídos.", image: labTerminal },
+  { title: "DNS y resolución", description: "Configuración de registros, pruebas con dig y nslookup, y troubleshooting de resolución en clientes RHEL.", image: labNetwork },
+  { title: "Servidor web Apache/Nginx", description: "Virtual hosts, TLS, contextos SELinux correctos y publicación de sitios sobre RHEL.", image: labNetwork },
+  { title: "Reverse proxy", description: "Proxy inverso hacia aplicaciones internas con cabeceras, caché y terminación TLS.", image: labNetwork },
+  { title: "Cloudflare y protección", description: "DNS gestionado, proxy activado, certificados origen y reglas de caché frente al servidor RHEL.", image: labNetwork },
+  { title: "Hardening de SSH", description: "Autenticación por llave, root login deshabilitado, cambio de puerto, límites de intentos y auditoría de accesos.", image: labSecurity },
+  { title: "Proyecto final: sitio protegido", description: "Servidor RHEL endurecido sirviendo una aplicación tras reverse proxy y Cloudflare, con firewalld, LVM y contenedores Podman.", image: labSecurity },
 ];
 
 const EvidenceSection = () => {
@@ -46,7 +50,7 @@ const EvidenceSection = () => {
             Evidencia de Prácticas
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Capturas y entregables reales de los laboratorios realizados por <span className="font-semibold text-primary">Nombre Persona Demo</span> durante el curso. Haz clic en cualquier tarjeta para ver detalles.
+            Laboratorios sobre Red Hat Enterprise Linux realizados por <span className="font-semibold text-primary">Nombre Persona Demo</span> durante el curso. Haz clic en cualquier tarjeta para ver detalles.
           </p>
         </motion.div>
 
@@ -65,7 +69,9 @@ const EvidenceSection = () => {
             >
               <img
                 src={ev.image}
-                alt={ev.title}
+                alt={`Laboratorio: ${ev.title}`}
+                width={1024}
+                height={1024}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -88,7 +94,7 @@ const EvidenceSection = () => {
               <div className="overflow-hidden rounded-lg -mt-2">
                 <img
                   src={selected.image}
-                  alt={selected.title}
+                  alt={`Laboratorio: ${selected.title}`}
                   className="w-full h-64 object-cover"
                 />
               </div>

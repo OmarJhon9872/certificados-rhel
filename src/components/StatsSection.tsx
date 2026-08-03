@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "320+", label: "Horas de formación" },
-  { value: "12", label: "Módulos completados" },
-  { value: "4", label: "Proyectos entregados" },
+  { value: "12", label: "Módulos RHEL completados" },
+  { value: "24", label: "Laboratorios entregados" },
   { value: "100%", label: "Aprobación" },
 ];
 

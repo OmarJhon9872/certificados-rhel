@@ -13,8 +13,8 @@ const Footer = () => {
               <h3 className="text-xl font-bold">Nombre Persona Demo</h3>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
-              SysAdmin Linux Cloud JR certificado por <span className="text-white font-semibold">Selling One</span>.
-              En busca de mi primera oportunidad profesional en infraestructura y cloud.
+              Red Hat Enterprise Linux JR certificado por <span className="text-white font-semibold">Selling One</span>.
+              En busca de mi primera oportunidad como administrador de sistemas RHEL.
             </p>
           </div>
           <div>
@@ -23,7 +23,7 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               {[
-                { label: "Perfil", href: "#perfil" },
+                { label: "Curso", href: "#curso" },
                 { label: "Temas", href: "#temas" },
                 { label: "Evidencia", href: "#evidencia" },
                 { label: "Instructor", href: "#instructor" },
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row gap-2 items-center justify-between text-xs text-primary-foreground/40">
-          <div>© 2026 Nombre Persona Demo · Certificación SysAdmin Linux Cloud JR</div>
+          <div>© 2026 Nombre Persona Demo · Certificación Red Hat Enterprise Linux JR</div>
           <div>Impartido por <span className="text-white/70">Selling One</span> · Instructor: <span className="text-white/70">Ing. TIC's Jonathan Omar</span></div>
         </div>
       </div>
